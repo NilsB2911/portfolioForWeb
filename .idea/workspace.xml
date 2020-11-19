@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f0d5af4-b18a-40a6-b60f-c9c0a605da42" name="Default Changelist" comment="added css Files">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="1f0d5af4-b18a-40a6-b60f-c9c0a605da42" name="Default Changelist" comment="added .gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +57,7 @@
       <workItem from="1605798731877" duration="412000" />
       <workItem from="1605800277867" duration="119000" />
       <workItem from="1605800483147" duration="1311000" />
-      <workItem from="1605816636186" duration="495000" />
+      <workItem from="1605816636186" duration="823000" />
     </task>
     <task id="LOCAL-00001" summary="createBasis">
       <created>1605800499094</created>
@@ -82,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605817084756</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added .gitignore">
+      <created>1605817213070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605817213070</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +109,8 @@
     <MESSAGE value="createBasis" />
     <MESSAGE value="added JS Test" />
     <MESSAGE value="added css Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added css Files" />
+    <MESSAGE value="added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="118" width="1104" height="786" key="IDE.errors.dialog" timestamp="1605798867354">
@@ -115,10 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605798903869" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605817101456">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605817220678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605817101456" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605817220678" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605798387003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
