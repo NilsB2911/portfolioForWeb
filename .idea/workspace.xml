@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f0d5af4-b18a-40a6-b60f-c9c0a605da42" name="Default Changelist" comment="" />
+    <list default="true" id="1f0d5af4-b18a-40a6-b60f-c9c0a605da42" name="Default Changelist" comment="createBasis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="ProjectId" id="1kVut3pLgdqmJt30hxhPm0iPiPf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,6 +32,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,7 +43,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605798290162</updated>
-      <workItem from="1605798292096" duration="329000" />
+      <workItem from="1605798292096" duration="424000" />
+      <workItem from="1605798731877" duration="412000" />
     </task>
     <servers />
   </component>
@@ -47,13 +52,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="540" y="263" key="IDE.errors.dialog" timestamp="1605798685444">
+    <state x="509" y="118" width="1104" height="786" key="IDE.errors.dialog" timestamp="1605798867354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="263" key="IDE.errors.dialog/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605798685444" />
+    <state x="509" y="118" width="1104" height="786" key="IDE.errors.dialog/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605798867354" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605798903869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605798903869" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605798387003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/458.-1080.1920.1040@0.0.1920.1040" timestamp="1605798387003" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
