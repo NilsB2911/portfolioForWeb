@@ -20,7 +20,7 @@ body {
 
 .innerContainer {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
 }
@@ -66,15 +66,15 @@ a{
     background-color: white;
 }
 
-#curser{
-    font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 4rem;
-    letter-spacing: 0.8rem;
-}
-
 a:hover{
     background-color: black;
+    color: white;
+}
+
+.curs{
+    font-family: Source Code Pro;
+    font-weight: 400;
+    font-size: 2rem;
     color: white;
 }
 
