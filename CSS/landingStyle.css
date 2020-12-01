@@ -1,20 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+}
+
 #nameTag {
     border: solid black 3px;
-    margin: 20% 28% 2%;
     padding: 20px;
     text-align: center;
-    position: relative;
     text-transform: uppercase;
     font-family: Source Code Pro;
     font-weight: 400;
     font-size: 4rem;
     letter-spacing: 0.8rem;
-    /*position: absolute*/
+    
+    grid-row: 1 /span 1;
+    grid-column: 1 /span 3;
+}
+
+#aboutMe {
+    grid-row: 2 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#work {
+    grid-row: 2 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#connect {
+    grid-row: 2 /span 1;
+    grid-column: 3 /span 1;
 }
 
 a{
     border: solid black 2px;
-    margin: 0% 1% 0% 1%;
     padding: 10px;
     font-family: Source Code Pro;
     font-weight: 400;
@@ -37,13 +78,35 @@ a:hover{
     color: white;
 }
 
-#buttons{
-    text-align: center;
-}
+@media screen and (max-width: 600px) {
 
-@media screen and (min-width: 600px) {
-    a {
-        width: 100%;
+    .container {
+        align-items: start;
+    }
+    
+    .innerContainer {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+    }
+
+    #nameTag {
+        grid-row: 1 /span 1;
+        grid-column: 1 /span 1;
+    }
+
+    #aboutMe {
+        grid-row: 2 /span 1;
+        grid-column: 1 /span 1;
+    }
+
+    #work {
+        grid-row: 3 /span 1;
+        grid-column: 1 /span 1;
+    }
+
+    #connect {
+        grid-row: 4 /span 1;
+        grid-column: 1 /span 1;
     }
 }
 
