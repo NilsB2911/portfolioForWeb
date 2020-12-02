@@ -14,14 +14,13 @@ body {
     display: flex;
     width: 100%;
     height: 100vh;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-
     text-transform: uppercase;
     font-family: Source Code Pro;
     font-weight: 400;
-    font-size: 1rem;
-    align-items: start;
+    font-size: 1rem; 
+    position: fixed; 
 }
 
 #topbar {
@@ -29,60 +28,50 @@ body {
     width: 100%;
     height: 7vh;
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    position: sticky;
     border: black solid 2px;
+    align-items: center;
 }
 
-
-#middle {
-    vertical-align: center;
-}
-
-
-#home{
+#home{ /*Unser Homebutton (also das "Johannes Meyer")*/
     grid-row: 1 /span 1;
-    grid-column: 1 /span 2;
-    border: black solid 1px;
+    grid-column: 1 /span 1;
     letter-spacing: 0.8rem;
     text-decoration: none;
     color: black;
 }
 
-#aboutMeA{
+#middle /*Die drei Verlinkungen, die zu den About me, work und connect seiten führe*/{
     grid-row: 1 /span 1;
     grid-column: 2 /span 1;
-    border: black solid 1px;
+}
+
+#social /*die 2 Icons zu twitter und Instagram*/{
+    grid-row: 1 /span 1;
+    grid-column: 3 /span 1;
+}
+
+#aboutMeA{
     text-decoration: none;
     color: black;
 }
 
 #workA{
-    grid-row: 1 /span 1;
-    grid-column: 3 /span 1;
-    border: black solid 1px;
     text-decoration: none;
     color: black;
 }
 
 #connectA{
-    grid-row: 1 /span 1;
-    grid-column: 4 /span 1;
-    border: black solid 1px;
     text-decoration: none;
     color: black;
 }
 
 .fa-twitter{
     color: black;
-    grid-row: 1 /span 1;
-    grid-column: 5 /span 1;
 }
 
 .fa-instagram{
     grid-row: 1 /span 1;
-    grid-column: 6 /span 1;
-    color: black;
 }

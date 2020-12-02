@@ -34,6 +34,7 @@ window.onload = function () {
 
 document.getElementById('aboutMe').onmouseleave = function () {
     document.getElementById('c1').style.opacity = 0;
+    delete o;
 }
 
 
