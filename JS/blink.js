@@ -1,7 +1,7 @@
 window.onload = function () {
     let o = true;
 
-    document.getElementById('aboutMe').onmouseover = function () {
+    document.getElementById('aboutMe').onmouseenter = function () {
         o = true;
         setInterval(changeBlink, 500);
         console.log(o)
@@ -31,5 +31,9 @@ window.onload = function () {
         }
     };
 };
+
+document.getElementById('aboutMe').onmouseleave = function () {
+    document.getElementById('c1').style.opacity = 0;
+}
 
 

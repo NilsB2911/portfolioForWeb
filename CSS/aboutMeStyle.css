@@ -21,6 +21,7 @@ body {
     font-family: Source Code Pro;
     font-weight: 400;
     font-size: 1rem;
+    align-items: start;
 }
 
 #topbar {
