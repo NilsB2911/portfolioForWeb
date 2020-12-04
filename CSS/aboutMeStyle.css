@@ -19,8 +19,8 @@ body {
     text-transform: uppercase;
     font-family: Source Code Pro;
     font-weight: 400;
-    font-size: 1rem; 
-    position: fixed; 
+    font-size: 1rem;
+    position: fixed;
 }
 
 #topbar {
@@ -29,7 +29,7 @@ body {
     height: 7vh;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     border: black solid 2px;
     align-items: center;
@@ -41,16 +41,19 @@ body {
     letter-spacing: 0.8rem;
     text-decoration: none;
     color: black;
+    justify-self: start;
 }
 
 #middle /*Die drei Verlinkungen, die zu den About me, work und connect seiten führe*/{
     grid-row: 1 /span 1;
     grid-column: 2 /span 1;
+    justify-self: center;
 }
 
 #social /*die 2 Icons zu twitter und Instagram*/{
     grid-row: 1 /span 1;
     grid-column: 3 /span 1;
+    justify-self: end;
 }
 
 #aboutMeA{
