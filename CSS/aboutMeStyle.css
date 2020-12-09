@@ -12,17 +12,6 @@ body {
     margin-right: 1vw;
 }
 
-header {
-    display: flex;
-    width: 98vw;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 1rem;
-}
 .container {
     display: flex;
     width: 98vw;
@@ -50,12 +39,38 @@ header {
     background-color: white;
 }
 
+header {
+    display: flex;
+    width: 98vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
 #mainLand {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+}
+
+#content {
+    display: flex;
+    width: 98vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#placeContent {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 35vw 35vw;
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: deepskyblue;
+    border: black solid 2px;
 }
 
 #home{ /*Unser Homebutton (also das "Johannes Meyer")*/
@@ -79,17 +94,7 @@ header {
     justify-self: end;
 }
 
-#aboutMeA{
-    text-decoration: none;
-    color: black;
-}
-
-#workA{
-    text-decoration: none;
-    color: black;
-}
-
-#connectA{
+#aboutMeA, #workA, #connectA{
     text-decoration: none;
     color: black;
 }
@@ -100,11 +105,12 @@ header {
 
 .fa-instagram{
     grid-row: 1 /span 1;
+    color: black;
 }
 
 #buch {
     width: 20%;
-    height: 20%;
+    height: auto;
     justify-self: center;
     grid-row: 1 /span 1;
     grid-column: 1 /span 1;
@@ -115,13 +121,71 @@ h1 {
     font-weight: 400;
     font-size: 3rem;
     letter-spacing: 0.8rem;
+    justify-self: center;
     grid-row: 2 /span 1;
-    grid-column: 1 /span;
+    grid-column: 1 /span 1;
 }
 
 #arrow {
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    height: 20%;
+    justify-self: center;
     grid-row: 3 /span 1;
-    grid-column: 1 /span;
+    grid-column: 1 /span 1;
+}
+
+.aboutMeText {
+    font-family: Source Code Pro;
+    font-weight: 400;
+    justify-self: center;
+}
+
+#bio{
+    grid-row: 1 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#b1 {
+    grid-row: 2 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#bioText {
+    grid-row: 2 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#skills {
+    grid-row: 3 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#b2 {
+    grid-row: 4 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#compText {
+    grid-row: 4 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#interests {
+    grid-row: 5 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#b3 {
+    grid-row: 6 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#interestText {
+    grid-row: 6 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#b1, #b2, #b3 {
+    width: 10%;
+    height: auto;
 }
