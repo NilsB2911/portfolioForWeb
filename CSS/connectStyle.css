@@ -1,0 +1,64 @@
+#briefkasten {
+    width: 20%;
+    height: auto;
+    justify-self: center;
+    grid-row: 1 /span 1;
+    grid-column: 1 /span 1;
+}
+
+.icon {
+    width: 10%;
+    height: auto;
+}
+
+#contactData {
+    display: flex;
+    width: 98vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 5vw 30vw 30vw;
+    grid-row-gap: 8vh;
+    grid-column-gap: 10.5vw;
+    justify-content: start;
+    align-items: start;
+}
+
+#emailI {
+    grid-row: 1 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#phoneI {
+    grid-row: 2 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#locationI {
+    grid-row: 3 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#email {
+    grid-row: 1 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#phone {
+    grid-row: 2 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#location {
+    grid-row: 3 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#text {
+    grid-row: 1 /span 3;
+    grid-column: 3 /span 1;
+}

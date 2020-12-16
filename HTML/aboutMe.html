@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../CSS/navStyle.css">
+    <link rel="stylesheet" href="../CSS/headerStyle.css">
     <link rel="stylesheet" href="../CSS/aboutMeStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,10 +28,10 @@
     </div>
 </div>
 <header>
-    <div id="mainLand">
+    <div class="mainLand">
         <img src="../PICTURES/Buch_10001.gif" id="buch">
         <h1>About me</h1>
-        <img src="../PICTURES/chevron--down.svg" id="arrow">
+        <img src="../PICTURES/chevron--down.svg" class="arrow">
     </div>
 </header>
 <div id="content">
@@ -54,16 +56,21 @@
             Ultrices non lectus vel egestas quis sem neque. </p>
         <h3 id="interests">Interests</h3>
         <img src="../PICTURES/PB.jpg" id="b3">
-        <p class="aboutMeText" id="interestText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi sem in feugiat
+        <p class="aboutMeText" id="interestText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi sem in
+            feugiat
             eget. Dignissim magna magna mauris Pretium non blandit viverra cursus turpis.
             Ultrices non lectus vel egestas quis sem neque. </p>
     </div>
 </div>
-<button onclick="topFunction()" id="backToTop" title="backToTop">^</button>
+<button id="backToTop">
+    <img src="../PICTURES/up-to-top.svg" alt="BackToTop">
+</button>
 <footer>
     <a href="">Datenschutzerklärung</a>
-    <a> & </a>
+    <a> | </a>
     <a href="">Impressum</a>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="../JS/backToTop.js"></script>
 </body>
 </html>

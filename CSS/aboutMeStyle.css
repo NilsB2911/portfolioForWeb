@@ -8,119 +8,27 @@
     padding: 0;
     }
 
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: black;
+}
+
+
 body {
     padding-top: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
 }
 /*---Navigation---*/
-.container {
-    display: flex;
-    width: 98vw;
-    height: 9vh;
-    align-items: start;
-    justify-content: center;
-    text-transform: uppercase;
-    font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 1rem;
-    position: sticky;
-    top: 1vh;
-}
 
-#topbar {
-    padding: 1vh;
-    width: 100%;
-    height: 7vh;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    border: black solid 2px;
-    align-items: center;
-    background-color: white;
-}
-
-
-#aboutMeA, #workA, #connectA{
-    text-decoration: none;
-    color: black;
-}
-#home{ /*Unser Homebutton (also das "Johannes Meyer")*/
-    grid-row: 1 /span 1;
-    grid-column: 1 /span 1;
-    letter-spacing: 0.8rem;
-    text-decoration: none;
-    color: black;
-    justify-self: start;
-}
-
-#middle /*Die drei Verlinkungen, die zu den About me, work und connect seiten führe*/{
-    grid-row: 1 /span 1;
-    grid-column: 2 /span 1;
-    justify-self: center;
-}
-
-#social /*die 2 Icons zu twitter und Instagram*/{
-    grid-row: 1 /span 1;
-    grid-column: 3 /span 1;
-    justify-self: end;
-}
-
-.fa-twitter{
-    color: black;
-}
-
-.fa-instagram{
-    grid-row: 1 /span 1;
-    color: black;
-}
-
-/*---Header---*/
-
-header {
-    display: flex;
-    width: 98vw;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-}
-
-#mainLand {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-}
-
-/*Elemente*/
-#buch {
-    width: 20%;
-    height: auto;
-    justify-self: center;
-    grid-row: 1 /span 1;
-    grid-column: 1 /span 1;
-}
-
-h1 {
-    font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.8rem;
-    justify-self: center;
-    grid-row: 2 /span 1;
-    grid-column: 1 /span 1;
-}
-
-#arrow {
-    width: 20%;
-    height: 20%;
-    justify-self: center;
-    grid-row: 3 /span 1;
-    grid-column: 1 /span 1;
-}
 
 /*---Content---*/
 
@@ -136,20 +44,27 @@ h1 {
     display: grid;
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 30vw 30vw;
-    grid-row-gap: 100px;
-    grid-column-gap: 180px;
+    grid-row-gap: 8vh;
+    grid-column-gap: 10.5vw;
     justify-content: start;
     align-items: start;
 }
 
+#buch {
+    width: 20%;
+    height: auto;
+    justify-self: center;
+    grid-row: 1 /span 1;
+    grid-column: 1 /span 1;
+}
 /*Headlines*/
 
 h3 {
     font-family: Source Code Pro;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.4rem;
-    margin-top: 80px;
+    margin-top: 13.5vh;
 }
 
 #bio{
@@ -158,7 +73,7 @@ h3 {
 }
 #skills {
     grid-row: 3 /span 1;
-    grid-column: 2 /span 1;
+    grid-column: 1 /span 1;
 }
 #interests {
     grid-row: 5 /span 1;
@@ -167,18 +82,11 @@ h3 {
 
 /*Text*/
 
-p {
-    font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-}
-
 .aboutMeText {
     font-family: Source Code Pro;
     font-weight: 400;
     justify-self: center;
+    font-size: 1rem;
 }
 
 #bioText {
@@ -187,7 +95,7 @@ p {
 }
 #compText {
     grid-row: 4 /span 1;
-    grid-column: 2 /span 1;
+    grid-column: 1 /span 1;
 }
 #interestText {
     grid-row: 6 /span 1;
@@ -209,7 +117,7 @@ p {
 }
 #b2 {
     grid-row: 4 /span 1;
-    grid-column: 1 /span 1;
+    grid-column: 2 /span 1;
 }
 
 #b3 {
@@ -221,13 +129,16 @@ p {
 /*Back-To-Top-Button*/
 
 #backToTop {
-    position: absolute;
-    justify-content: end;
+    float: left;
+    position: fixed;
     border: black solid 2px;
     border-radius: 0px;
     color: black;
-    padding: 15px;
-    margin: 30px;
+    right: 0px;
+    bottom: 0;
+    margin: 5vh;
+    padding: 2vh;
+    background-color: white;
   }
 
 
@@ -242,4 +153,12 @@ a {
     font-family: Source Code Pro;
     font-weight: 400;
     font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    margin: 0.5vh;
  }
+
+footer {
+    margin: 15vh 0vh;
+    text-align: center;
+}
