@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     width: 98vw;
@@ -33,6 +41,21 @@ h1 {
     justify-self: center;
     grid-row: 3 /span 1;
     grid-column: 1 /span 1;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: black;
 }
 
 

@@ -1,0 +1,50 @@
+#taube {
+    width: 20%;
+    height: auto;
+    justify-self: center;
+    grid-row: 1 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#marginDiv {
+    display: grid;
+    width: 98vw;
+    border: black 1px solid;
+}
+
+#fibonacci {
+    display: grid;
+
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vw;
+    justify-content: start;
+    align-items: start;
+}
+
+#f1 {
+    grid-row: 1 /span 7;
+    grid-column: 1 /span 8;
+}
+
+#f2 {
+    grid-row: 1 /span 5;
+    grid-column: 8 /span 5;
+}
+
+#f3 {
+    grid-row: 6 /span 3;
+    grid-column: 10 /span 3;
+}
+
+#f4 {
+    grid-row: 6 /span 2;
+    grid-column: 8 /span 3;
+}
+
+#f1, #f2, #f3, #f4 {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}

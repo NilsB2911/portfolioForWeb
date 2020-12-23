@@ -1,32 +1,7 @@
 /*---Allgemein---*/
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    }
 
 
-::-webkit-scrollbar {
-    width: 10px
-}
-
-::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
-    background: white;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background: black;
-}
-
-
-body {
-    padding-top: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
 /*---Navigation---*/
 
 
@@ -147,18 +122,6 @@ h3 {
 footer{
     align-items: center;
     justify-content: center;
-}
-
-a {
-    font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 1rem;
-    color: black;
-    text-decoration: none;
-    margin: 0.5vh;
- }
-
-footer {
     margin: 15vh 0vh;
     text-align: center;
 }
