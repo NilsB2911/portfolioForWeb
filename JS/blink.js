@@ -1,11 +1,12 @@
 window.onload = function () {
     let o = true;
+    var intId = setInterval(changeBlink, 500);
 
     document.getElementById('aboutMe').addEventListener("mouseenter", startBlink);
     document.getElementById('aboutMe').addEventListener("mouseleave", stopBlink);
 
     function startBlink() {
-        setInterval(changeBlink, 500);
+        intId;
         console.log(o);
     }
 
@@ -22,7 +23,7 @@ window.onload = function () {
     };
 
     function stopBlink() {
-        ;
+        clearInterval(intId);
     };
 }
 
