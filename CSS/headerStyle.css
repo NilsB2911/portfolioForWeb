@@ -58,4 +58,16 @@ h1 {
     background: black;
 }
 
+#backToTop {
+    float: left;
+    position: fixed;
+    border: black solid 2px;
+    border-radius: 0px;
+    color: black;
+    right: 0px;
+    bottom: 0;
+    margin: 5vh;
+    padding: 2vh;
+    background-color: white;
+}
 
