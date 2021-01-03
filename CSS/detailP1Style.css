@@ -1,9 +1,9 @@
 header {
     display: flex;
     width: 98vw;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
+    height: 85vh;
+    align-items: start;
+    justify-content: start;
 }
 
 .container {
@@ -21,12 +21,11 @@ header {
 #headerPic {
     grid-column: 1;
     grid-row: 1;
-
+    
     width: 100%;
 
     z-index: 1;
 }
-
 
 #contentGrid {
     display: grid;
