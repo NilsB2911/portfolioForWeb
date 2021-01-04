@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    width: 98vw;
+    height: 720px;
+    align-items: start;
+    justify-content: start;
+}
+
+.container {
+    z-index: 4;
+}
+
+#threejsview {
+    display: grid;
+    grid-template-columns: 98vw;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene, canvas {
+    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
+    
+    width: 100%;
+
+    z-index: 1;
+}
+
+#contentGrid {
+    padding-top: 5vh;
+    display: grid;
+    width: 98vw;
+    font-family: Source Code Pro;
+    font-weight: 400;
+}
+
+#detailContent {
+    display: grid;
+    width: 50vw;
+    justify-self: center;
+    padding-top: 10vh;
+    grid-gap: 5vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+#smallNavBar {
+    display: grid;
+    width: 90vw;
+    justify-self: center;
+
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1vw;
+}
+
+#last {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: left;
+}
+
+#next {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: right;
+}
+
+.detailbtn {
+    font-family: Source Code Pro;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+}
+
+#fach {
+    grid-row: 1;
+    grid-column: 2;
+
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    justify-self: center;
+    border: solid black 2px;
+    padding: 1vh;
+}
+
+#concept {
+    grid-row: 1;
+    grid-column: 1 /span 2;
+}
+
+#story {
+    grid-row: 3;
+    grid-column: 1 /span 2;
+}
+
+#conceptText {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#storyText {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.headersDetail {
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    justify-self: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    margin: 15vh 0vh;
+    text-align: center;
+}

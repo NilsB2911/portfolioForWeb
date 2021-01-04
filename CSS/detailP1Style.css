@@ -1,7 +1,7 @@
 header {
     display: flex;
     width: 98vw;
-    height: 85vh;
+    height: auto;
     align-items: start;
     justify-content: start;
 }
@@ -28,6 +28,7 @@ header {
 }
 
 #contentGrid {
+    padding-top: 5vh;
     display: grid;
     width: 98vw;
     font-family: Source Code Pro;
