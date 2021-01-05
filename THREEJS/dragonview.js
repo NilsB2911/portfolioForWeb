@@ -1,8 +1,5 @@
 //Variables for setup
 
-import * as THREE from 'https://unpkg.com/three/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
-import * as OBJLoader from '../THREEJS/loaders/OBJLoader';
 
 let container;
 let camera;
