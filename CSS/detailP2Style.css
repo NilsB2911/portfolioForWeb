@@ -1,7 +1,6 @@
 header {
     display: flex;
     width: 98vw;
-    height: 720px;
     align-items: start;
     justify-content: start;
 }
@@ -18,12 +17,13 @@ header {
     align-items: center;
 }
 
-.scene, canvas {
+#scene {
     position: absolute;
     grid-column: 1;
     grid-row: 1;
     
     width: 100%;
+    height: 100%;
 
     z-index: 1;
 }
@@ -129,4 +129,8 @@ footer{
     justify-content: center;
     margin: 15vh 0vh;
     text-align: center;
+}
+
+canvas {
+    padding-right: 0.5vw;
 }
