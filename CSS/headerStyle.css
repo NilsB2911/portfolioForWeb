@@ -16,8 +16,8 @@ header {
 
 .mainLand {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 333px;
+    grid-template-rows: 5fr 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
