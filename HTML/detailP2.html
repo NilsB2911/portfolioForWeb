@@ -52,64 +52,7 @@
             Ultrices non lectus vel egestas quis sem neque.</p>
     </div>
 </div>
-<script type="module">
-    import * as THREE from '../LIBS/three/three.module.js';
-    import {OBJLoader} from "../LIBS/three/OBJLoader.js";
-    import {OrbitControls} from "../LIBS/three/OrbitControls.js";
-
-    let scene, camera, renderer, container, loader;
-    let w, h;
-
-    const sceneContainer = document.querySelector("#threejsview");
-    function init() {
-        w = document.getElementById("scene").offsetWidth;
-        h = document.getElementById("scene").offsetHeight;
-
-        container = document.getElementById("scene");
-        document.body.appendChild(container)
-        scene = new THREE.Scene();
-        scene.background = new THREE.Color('black');
-
-        camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 1, 5000);
-        let hlight = new THREE.AmbientLight('white', 100);
-        scene.add(hlight);
-        camera.rotation.y = 45/180*Math.PI;
-        camera.position.x = 800;
-        camera.position.x = 100;
-        camera.position.x = 1000;
-
-
-        renderer = new THREE.WebGLRenderer({antialias:true});
-        renderer.setSize(w, h);
-        sceneContainer.appendChild(renderer.domElement);
-
-        let orb = new OrbitControls(camera, renderer.domElement);
-        orb.update();
-
-
-        loader = new OBJLoader();
-        loader.load("../LIBS/models/harrie.obj", function (obj) {
-            scene.add(obj);
-            console.log(loader);
-            console.log(renderer);
-            console.log(container);
-            renderer.render(scene, camera);
-        });
-
-        animate();
-
-        function animate() {
-            requestAnimationFrame(animate);
-
-            // required if controls.enableDamping or controls.autoRotate are set to true
-            orb.update();
-
-            renderer.render(scene, camera);
-        }
-
-    }
-    init();
-</script>
+<script type="module" src="../JS/harrieScript.js"></script>
 </body>
 <footer>
     <a href="">Datenschutzerklärung</a>
