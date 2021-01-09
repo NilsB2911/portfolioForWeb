@@ -12,13 +12,12 @@ header {
 #threejsview {
     display: grid;
     grid-template-columns: 98vw;
-    grid-template-rows: 1fr;
+    grid-template-rows: 720px;
     justify-content: center;
     align-items: center;
 }
 
-#scene {
-    position: absolute;
+#scene, canvas {
     grid-column: 1;
     grid-row: 1;
     
@@ -26,6 +25,8 @@ header {
     height: 100%;
 
     z-index: 1;
+
+    justify-content: center;
 }
 
 #contentGrid {

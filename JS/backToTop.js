@@ -1,6 +1,9 @@
+window.onload = function () {
+    document.getElementById("backToTop").style.opacity = 0;
+}
+
 document.getElementById("backToTop").onclick = function () {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.documentElement.scrollTo({top: 0, behavior: 'smooth'})
 };
 
 window.addEventListener('scroll', function() {

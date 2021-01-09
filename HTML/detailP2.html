@@ -22,8 +22,6 @@
         </div>
     </div>
 </div>
-<script src="../p5/p5.js"></script>
-<script src="../p5/p5obj.js"></script>
 <header>
     <div id="threejsview">
         <div id="scene"></div>
@@ -37,7 +35,7 @@
         <div id="next" class="detailbtn">
             <p>Photo</p>
         </div>
-        <p id="fach">Mit Zimt und Zuversicht</p>
+        <p id="fach">Harrie</p>
     </div>
     <div id="detailContent">
         <p id="concept" class="headersDetail">Konzeption</p>
@@ -54,6 +52,47 @@
             Ultrices non lectus vel egestas quis sem neque.</p>
     </div>
 </div>
+<script type="module">
+    import * as THREE from '../LIBS/three/three.module.js';
+    import {OBJLoader} from "../LIBS/three/OBJLoader.js";
+    
+    let scene, camera, renderer, container, loader;
+    let w, h;
+
+    function init() {
+        w = document.getElementById("scene").offsetWidth;
+        h = document.getElementById("scene").offsetHeight;
+
+        container = document.getElementById("scene");
+        document.body.appendChild(container)
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color('black');
+
+        camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 1, 5000);
+        let hlight = new THREE.AmbientLight('white', 100);
+        scene.add(hlight);
+        camera.rotation.y = 45/180*Math.PI;
+        camera.position.x = 800;
+        camera.position.x = 100;
+        camera.position.x = 1000;
+
+
+        renderer = new THREE.WebGLRenderer({antialias:true});
+        renderer.setSize(w, h);
+        container.appendChild(renderer.domElement);
+
+
+        loader = new OBJLoader();
+        loader.load("../LIBS/models/harrie.obj", function (obj) {
+            scene.add(obj);
+            console.log(loader);
+            console.log(renderer);
+            console.log(container);
+            renderer.render(scene, camera);
+        })
+    }
+    init();
+</script>
 </body>
 <footer>
     <a href="">Datenschutzerklärung</a>
