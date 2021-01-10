@@ -33,7 +33,7 @@ header {
     padding-top: 5vh;
     display: grid;
     width: 98vw;
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, Arial;
     font-weight: 400;
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 .detailbtn {
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, Arial;
     font-weight: 400;
     font-size: 2rem;
     letter-spacing: 0.8rem;

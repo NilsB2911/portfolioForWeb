@@ -35,7 +35,7 @@
 /*Headlines*/
 
 h3 {
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, Arial;
     font-weight: 400;
     font-size: 2rem;
     letter-spacing: 0.4rem;
@@ -58,7 +58,7 @@ h3 {
 /*Text*/
 
 .aboutMeText {
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, Arial;
     font-weight: 400;
     justify-self: center;
     font-size: 1rem;

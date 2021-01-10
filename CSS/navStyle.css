@@ -5,7 +5,7 @@
     align-items: start;
     justify-content: center;
     text-transform: uppercase;
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, Arial;
     font-weight: 400;
     font-size: 1rem;
     position: sticky;
@@ -67,7 +67,7 @@ body {
 }
 
 a {
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, Arial;
     font-weight: 400;
     font-size: 1rem;
     color: black;
