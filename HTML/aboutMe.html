@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div>
     <div class="container">
         <div id=hamburgerClosed>
             <span onclick="openNav()">open</span>
@@ -30,13 +29,14 @@
             </div>
         </div>
     </div>
-</div>
 <header>
     <div class="mainLand">
         <div id="ich">
         </div>
         <h1>About me</h1>
-        <img src="../PICTURES/chevron--down.svg" class="arrow">
+        <button id="arrowButton">
+            <img src="../PICTURES/chevron--down.svg" class="arrow">
+        </button>
     </div>
 </header>
 <div id="content">
@@ -75,6 +75,7 @@
     <a> | </a>
     <a href="">Impressum</a>
 </footer>
+<script src="../JS/downToContent.js"></script>
 <script src="../JS/ich.js" type="module"></script>
 <script src="../JS/backToTop.js"></script>
 <script src="../JS/responsiveNav.js"></script>

@@ -14,9 +14,9 @@ function init() {
     container = document.getElementById("scene");
     document.body.appendChild(container)
     scene = new THREE.Scene();
-    scene.background = new THREE.Color('black');
+    scene.background = new THREE.Color('white');
 
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
     let dirlight = new THREE.DirectionalLight("white", 5);
     //let hlight = new THREE.AmbientLight('white', 100);
     scene.add(dirlight);

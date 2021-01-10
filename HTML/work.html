@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div>
     <div class="container">
         <div id="topbar">
             <a href="index.html" id="home">Johannes Meyer</a>
@@ -24,13 +23,14 @@
             </div>
         </div>
     </div>
-</div>
 <header>
     <div class="mainLand">
         <div id="buch">
         </div>
         <h1>Work</h1>
-        <img src="../PICTURES/chevron--down.svg" class="arrow">
+        <button id="arrowButton">
+            <img src="../PICTURES/chevron--down.svg" class="arrow">
+        </button>
     </div>
 </header>
 <div id="marginDiv">
@@ -61,8 +61,6 @@
         </div>
     </div>
 </div>
-</body>
-<script src="../JS/buch.js" type="module"></script>
 <button id="backToTop">
     <img src="../PICTURES/up-to-top.svg" alt="BackToTop">
 </button>
@@ -71,5 +69,8 @@
     <a> | </a>
     <a href="">Impressum</a>
 </footer>
+<script src="../JS/buch.js" type="module"></script>
+<script src="../JS/downToContent.js"></script>
 <script src="../JS/backToTop.js"></script>
+</body>
 </html>

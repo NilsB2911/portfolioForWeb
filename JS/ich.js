@@ -13,16 +13,15 @@ function init() {
     container = document.getElementById("ich");
     document.body.appendChild(container)
     scene = new THREE.Scene();
-    scene.background = new THREE.Color('black');
+    scene.background = new THREE.Color('white');
 
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
     //let dirlight = new THREE.DirectionalLight("white", 5);
-    let hlight = new THREE.AmbientLight('white', 100);
+    let hlight = new THREE.AmbientLight('white', 1000);
     scene.add(hlight);
-    camera.rotation.y = 45/180*Math.PI;
-    camera.position.x = 800;
-    camera.position.y = 60;
-    camera.position.z = 1000;
+    camera.position.x = 180;
+    camera.position.y = 0;
+    camera.position.z = 290;
 
 
     renderer = new THREE.WebGLRenderer({antialias:true});
@@ -35,7 +34,7 @@ function init() {
 
     loader = new FBXLoader();
     loader.load("../LIBS/models/flieger.fbx", function (obj) {
-        obj.scale.multiplyScalar(20);
+        obj.scale.multiplyScalar(14);
         scene.add(obj);
         console.log(loader);
         console.log(renderer);
@@ -47,7 +46,6 @@ function init() {
 
     function animate() {
         requestAnimationFrame(animate);
-
         // required if controls.enableDamping or controls.autoRotate are set to true
         orb.update();
 
