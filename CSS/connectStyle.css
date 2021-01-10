@@ -68,7 +68,7 @@
 }
 
 .contactInfo {
-    font-family: Source Code Pro, Arial;
+    font-family: 'Source Code Pro', monospace, Arial;
     font-weight: 400;
     font-size: 1rem;
     justify-self: left;
@@ -91,7 +91,7 @@
     grid-row: 1 /span 2;
     grid-column: 1;
 
-    font-family: Source Code Pro, Arial;
+    font-family: 'Source Code Pro', monospace, Arial;
     font-weight: 400;
     font-size: 1rem;
     justify-self: left;

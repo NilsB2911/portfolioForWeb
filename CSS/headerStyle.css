@@ -17,7 +17,7 @@ header {
 .mainLand {
     display: grid;
     grid-template-columns: 333px;
-    grid-template-rows: 5fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr 5fr;
     justify-content: center;
     align-items: center;
 }
@@ -25,7 +25,7 @@ header {
 /*Elemente*/
 
 h1 {
-    font-family: Source Code Pro, Arial;
+    font-family: 'Source Code Pro', monospace, Arial;
     font-weight: 400;
     font-size: 3rem;
     text-transform: uppercase;
@@ -42,9 +42,6 @@ h1 {
     grid-row: 3 /span 1;
     grid-column: 1 /span 1;
 }
-
-
-
 
 ::-webkit-scrollbar {
     width: 10px
