@@ -29,7 +29,9 @@
 #aboutMeA, #workA, #connectA{
     text-decoration: none;
     color: black;
+    
 }
+
 #home{ /*Unser Homebutton (also das "Johannes Meyer")*/
     grid-row: 1 /span 1;
     grid-column: 1 /span 1;
