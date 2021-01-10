@@ -11,7 +11,13 @@
 <body>
 <div>
     <div class="container">
-        <div id="topbar">
+        <div id=hamburgerClosed>
+            <span onclick="openNav()">open</span>
+        </div>
+        <div id="topbar"> 
+            <div id=hamburgerOpened>
+                <span onclick="closeNav()">close</span>
+            </div>
             <a href="index.html" id="home">Johannes Meyer</a>
             <div id="middle">
                 <a href="aboutMe.html" id="aboutMeA">About Me</a>
@@ -70,5 +76,6 @@
     <a href="">Impressum</a>
 </footer>
 <script src="../JS/backToTop.js"></script>
+<script src="../JS/responsiveNav.js"></script>
 </body>
 </html>

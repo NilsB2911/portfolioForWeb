@@ -74,3 +74,78 @@ a {
     text-decoration: none;
     margin: 0.5vh;
 }
+
+#hamburgerClosed{
+    display: none;
+}
+#hamburgerOpened{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1020px){
+
+    #hamburgerClosed{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    #hamburgerOpened{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        align-items: start;
+        justify-content: start;
+    }
+
+    #topbar {
+        position: fixed;
+        top: 0;
+        display: block;
+        width: 0vw;
+        height: 100vh;
+        align-items: start;
+        background-color:white;
+        padding-top: 6vh;
+        padding-left: 0vw;
+        /*border-left: solid rgba(206, 206, 206, 0.384) 1px;*/
+        right:0;
+        transition: 0.5s;
+    }
+
+    #home{
+        display: flex;
+        padding-bottom: 6vh;
+    }
+
+    #middle{
+        padding-bottom: 6vh;
+    }
+
+    #aboutMeA {
+        display: flex;
+        padding-bottom: 0.5vh;
+    }
+
+    #aboutMeA:hover {
+        text-decoration: underline;
+    }
+    #workA {
+        display: flex;
+        padding-bottom: 0.5vh;
+    }
+    #workA:hover {
+        text-decoration: underline;
+    }
+    #connectA {
+        display: flex;
+    }
+    #connectA:hover {
+        text-decoration: underline;
+    }   
+}
