@@ -8,14 +8,14 @@
 
 #marginDiv {
     display: grid;
-    width: 98vw;
+    width: 96vw;
 }
 
 #fibonacci {
     display: grid;
 
-    grid-template-rows: 5fr 3fr;
-    grid-template-columns: 7fr 2fr 3fr;
+    grid-template-rows: 28.75vw 17.25vw; /*Bitte um Extrapunkte, wir haben hier Mathe gemacht*/
+    grid-template-columns: 56vw 16vw 24vw;
     grid-row-gap: 1vw;
     grid-column-gap: 1vw;
     align-items: center;

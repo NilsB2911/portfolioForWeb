@@ -9,6 +9,7 @@
     font-weight: 400;
     font-size: 1rem;
     position: sticky;
+    z-index: 1000; /*Slightly Overkill, aber sicher ist sicher*/
 }
 
 #topbar {
