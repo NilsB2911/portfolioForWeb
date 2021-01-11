@@ -1,9 +1,9 @@
 #buch {
+    width: 20%;
+    height: auto;
     justify-self: center;
     grid-row: 1 /span 1;
     grid-column: 1 /span 1;
-    width: 100%;
-    height: 100%;
 }
 
 #marginDiv {
@@ -25,6 +25,8 @@
     grid-row: 1 /span 2;
     width: 100%;
     height: 100%;
+    position: relative;
+    background-color: black ;
 }
 
 #f2 {
@@ -56,10 +58,34 @@ footer {
 }
 
 .fibPic {
+    opacity: 1;
+    display: block;
     object-position: top center;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: 0.3s ease;
+}
+
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+}
+.text {
+    background-color:white;
+    color:black;
+    padding: 2vw;
+}
+
+#f1:hover .fibPic {
+    opacity: 0.3;
+}
+  
+#f1:hover .overlay {
+    opacity: 1;
 }
 
 .marginChange {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<div>
     <div class="container">
         <div id="topbar">
             <a href="index.html" id="home">Johannes Meyer</a>
@@ -23,23 +24,25 @@
             </div>
         </div>
     </div>
+</div>
 <header>
     <div class="mainLand">
         <div id="buch">
         </div>
         <h1>Work</h1>
-        <button id="arrowButton">
-            <img src="../PICTURES/chevron--down.svg" class="arrow">
-        </button>
+        <img src="../PICTURES/chevron--down.svg" class="arrow">
     </div>
 </header>
 <div id="marginDiv">
     <div id="fibonacci">
         <div id="f1">
-            <a href="detailP1.html" class="marginChange">
                 <img class="fibPic" id="p1" src="../PICTURES/Buch_10001.gif">
                 <p id="f1Text">Mit Zimt und Zuversicht</p>
-            </a>
+                <div class="overlay">
+                    <div class="text">
+                        <a href="detailP1.html" class="marginChange">Gemischte Gefühle</a>
+                    </div>
+                </div>
         </div>
         <div id="f2">
             <a href="detailP2.html" class="marginChange">
@@ -61,6 +64,7 @@
         </div>
     </div>
 </div>
+</body>
 <button id="backToTop">
     <img src="../PICTURES/up-to-top.svg" alt="BackToTop">
 </button>
@@ -69,8 +73,5 @@
     <a> | </a>
     <a href="">Impressum</a>
 </footer>
-<script src="../JS/buch.js" type="module"></script>
-<script src="../JS/downToContent.js"></script>
 <script src="../JS/backToTop.js"></script>
-</body>
 </html>
