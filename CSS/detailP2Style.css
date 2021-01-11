@@ -97,6 +97,20 @@ header {
     grid-column: 1 /span 2;
 }
 
+#p1Model {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+#p2Material {
+    grid-row: 4;
+    grid-column: 2;
+    width: 100%;
+    object-fit: cover;
+}
+
 #conceptText {
     grid-row: 2;
     grid-column: 2;

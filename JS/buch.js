@@ -2,7 +2,7 @@ import * as THREE from '../LIBS/three/three.module.js';
 import {FBXLoader} from "../LIBS/three/FBXLoader.js";
 import {OrbitControls} from "../LIBS/three/OrbitControls.js";
 
-let scene, camera, renderer, container, loader;
+let scene, camera, renderer, container, loader, lambert;
 let w, h;
 
 const sceneContainer = document.querySelector(".mainLand");
@@ -30,10 +30,11 @@ function init() {
 
     let orb = new OrbitControls(camera, renderer.domElement);
     orb.update();
-
+    lambert = new THREE.MeshLambertMaterial({reflectivity: 0, aoMapIntensity: 0, color: "white", refractionRatio: 0, emissiveIntensity: 0})
 
     loader = new FBXLoader();
     loader.load("../LIBS/models/flieger.fbx", function (obj) {
+        obj.material = lambert;
         obj.scale.multiplyScalar(14);
         scene.add(obj);
         console.log(loader);
