@@ -27,6 +27,9 @@
     height: 100%;
     position: relative;
     background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #f2 {
@@ -34,6 +37,11 @@
     grid-column: 2 /span 2;
     width: 100%;
     height: 100%;
+    position: relative;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #f3 {
@@ -41,6 +49,11 @@
     grid-column: 3;
     width: 100%;
     height: 100%;
+    position: relative;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #f4 {
@@ -48,6 +61,11 @@
     grid-column: 2;
     width: 100%;
     height: 100%;
+    position: relative;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -67,29 +85,51 @@ footer {
     transition: 0.3s ease;
 }
 
-.overlay{
+.overlay {
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transition: .5s ease;
-}
-.text {
-    background-color:white;
-    color:black;
-    padding: 2vw;
 }
 
 #f1:hover .fibPic {
-    opacity: 0.3;
+    opacity: 0.2;
 }
   
 #f1:hover .overlay {
     opacity: 1;
 }
 
+#f2:hover .fibPic {
+    opacity: 0.2;
+}
+  
+#f2:hover .overlay {
+    opacity: 1;
+}
+
+#f3:hover .fibPic {
+    opacity: 0.2;
+}
+  
+#f3:hover .overlay {
+    opacity: 1;
+}
+
+#f4:hover .fibPic {
+    opacity: 0.2;
+}
+  
+#f4:hover .overlay {
+    opacity: 1;
+}
+
 .marginChange {
     margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    background-color:white;
+    color:black;
+    padding: 1vw 2vw;
 }
 
 #f1Text {
