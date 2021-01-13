@@ -58,13 +58,15 @@ header {
 #last {
     grid-row: 1;
     grid-column: 1;
-    justify-self: left;
+    justify-content: center;
+    text-align: center;
 }
 
 #next {
     grid-row: 1;
     grid-column: 3;
-    justify-self: right;
+    justify-content: center;
+    text-align: center;
 }
 
 .detailbtn {
@@ -95,6 +97,14 @@ header {
     grid-column: 1 /span 2;
 }
 
+#cubes {
+    font-size: 1.5rem;
+}
+
+#photos {
+    font-size: 1.5rem;
+}
+
 #conceptText {
     grid-row: 2;
     grid-column: 2;
@@ -109,6 +119,18 @@ header {
     font-size: 2rem;
     letter-spacing: 0.8rem;
     justify-self: center;
+}
+
+#chev1 {
+    vertical-align: center;
+    float: left;
+    width: 30px;
+}
+
+#chev2 {
+    vertical-align: center;
+    float: right;
+    width: 30px;
 }
 
 ::-webkit-scrollbar {
