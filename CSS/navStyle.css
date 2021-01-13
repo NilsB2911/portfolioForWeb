@@ -29,6 +29,9 @@
 #aboutMeA, #workA, #connectA{
     text-decoration: none;
     color: black; 
+    letter-spacing: 0.3em;
+    text-transform: none;
+    padding: 0 0.5vw;
 }
 
 #home{ /*Unser Homebutton (also das "Johannes Meyer")*/
@@ -83,11 +86,22 @@ a {
     display: none;
 }
 
+#connectA:hover {
+    text-decoration: underline;
+}   
+#workA:hover {
+    text-decoration: underline;
+}
+ 
+#aboutMeA:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1020px){
 
     .hamburgerButtonOpen {
         width: 6vh;
-        height: auto%;
+        height: auto;
         justify-self: end;
         padding-top: 2vh;
         padding-right: 2vh;
@@ -95,7 +109,7 @@ a {
 
     .hamburgerButtonClose {
         width: 6vh;
-        height: auto%;
+        height: auto;
         justify-self: end;
         padding-top: 2vh;
         padding-left: 2vh;
@@ -148,20 +162,13 @@ a {
         padding-bottom: 0.5vh;
     }
 
-    #aboutMeA:hover {
-        text-decoration: underline;
-    }
+
     #workA {
         display: flex;
         padding-bottom: 0.5vh;
     }
-    #workA:hover {
-        text-decoration: underline;
-    }
+
     #connectA {
         display: flex;
     }
-    #connectA:hover {
-        text-decoration: underline;
-    }   
 }

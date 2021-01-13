@@ -82,17 +82,17 @@ footer {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .overlay {
     opacity: 0;
     position: absolute;
-    transition: .5s ease;
+    transition: .4s ease;
 }
 
 #f1:hover .fibPic {
-    opacity: 0.2;
+    opacity: 0.4;
 }
   
 #f1:hover .overlay {
@@ -100,7 +100,7 @@ footer {
 }
 
 #f2:hover .fibPic {
-    opacity: 0.2;
+    opacity: 0.4;
 }
   
 #f2:hover .overlay {
@@ -108,7 +108,7 @@ footer {
 }
 
 #f3:hover .fibPic {
-    opacity: 0.2;
+    opacity: 0.4;
 }
   
 #f3:hover .overlay {
@@ -116,7 +116,7 @@ footer {
 }
 
 #f4:hover .fibPic {
-    opacity: 0.2;
+    opacity: 0.4;
 }
   
 #f4:hover .overlay {
