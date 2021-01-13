@@ -49,7 +49,6 @@ header {
     display: grid;
     width: 90vw;
     justify-self: center;
-
     grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-rows: 1fr;
     grid-gap: 1vw;
@@ -58,15 +57,18 @@ header {
 #last {
     grid-row: 1;
     grid-column: 1;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
 }
 
 #next {
     grid-row: 1;
     grid-column: 3;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .detailbtn {
