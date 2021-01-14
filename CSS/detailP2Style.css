@@ -145,6 +145,26 @@ footer{
     margin: 15vh 0vh;
     text-align: center;
 }
+.impressum{
+    position: relative;
+}
+
+.impressum::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.impressum:hover::after{
+    left: 0%;
+    width: 100%;
+}
 
 canvas {
     padding-right: 0.5vw;

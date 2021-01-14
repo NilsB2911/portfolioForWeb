@@ -33,7 +33,6 @@
     letter-spacing: 0.3em;
     text-transform: none;
     margin: 0 0.5vw;
-    transition: 0.2s ease;
     position: relative;
 }
 
@@ -54,10 +53,6 @@
     width: 100%;
 }
 
-@keyframes lines{
-    from {border-bottom: none}
-    to {border-bottom: solid black 1px}
-  }
 
 #home{ /*Unser Homebutton (also das "Johannes Meyer")*/
     grid-row: 1 /span 1;
@@ -91,19 +86,6 @@
     transition: 0.5s ease;
     border: none;
 }
-
-.fa-instagram:before{
-    content:'';
-    border: solid black 1px;
-    height: 0;
-    width: 0;
-
-}
-
-.fa-instagram:before:hover{
-    
-}
-
 
 body {
     padding-top: 1vw;

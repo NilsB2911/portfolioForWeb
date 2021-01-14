@@ -132,6 +132,7 @@ footer {
     padding: 1vw 2vw;
 }
 
+
 #f1Text {
     grid-row: 1 /span 2;
 }
@@ -151,6 +152,26 @@ footer {
     grid-column: 2;
 }
 
+.impressum{
+    position: relative;
+}
+
+.impressum::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.impressum:hover::after{
+    left: 0%;
+    width: 100%;
+}
 
 @media only screen and (max-width: 1100px) {
 
