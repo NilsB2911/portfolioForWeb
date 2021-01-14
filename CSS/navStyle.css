@@ -1,5 +1,5 @@
 .container {
-    display: flex;
+    display: static;
     width: 98vw;
     height: 9vh;
     align-items: start;
@@ -10,6 +10,7 @@
     font-size: 1rem;
     position: sticky;
     z-index: 1000; /*Slightly Overkill, aber sicher ist sicher*/
+    background-color: white;
 }
 
 #topbar {
@@ -108,11 +109,13 @@ a {
     }
 
     .hamburgerButtonClose {
-        width: 6vh;
+        width: 5vh;
         height: auto;
-        justify-self: end;
+        justify-self: start;
         padding-top: 2vh;
-        padding-left: 2vh;
+        padding-bottom: 4vh;
+        position: relative;
+        left: 0;
     }
 
     #hamburgerClosed{
@@ -123,12 +126,13 @@ a {
     }
     #hamburgerOpened{
         display: block;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
     }
 
     .container {
+        position: absolute;
         align-items: start;
         justify-content: start;
     }
@@ -137,11 +141,11 @@ a {
         position: fixed;
         top: 0;
         display: block;
-        width: 0vw;
+        width: -4vw;
         height: 100vh;
         align-items: start;
         background-color:white;
-        padding-top: 6vh;
+        padding-top: 10vh;
         padding-left: 0vw;
         /*border-left: solid rgba(206, 206, 206, 0.384) 1px;*/
         right:0;

@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../CSS/detailP1Style.css">
+    <title>Gemischte Gefühle</title>
     <link rel="stylesheet" href="../CSS/navStyle.css">
+    <link rel="stylesheet" href="../CSS/detailP1Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
+        <div id=hamburgerClosed>
+            <span onclick="openNav()">  
+                <img src="../PICTURES/menu.svg" class="hamburgerButtonOpen">
+            </span>
+        </div>
         <div id="topbar">
+            <div id=hamburgerOpened>
+                <span onclick="closeNav()">
+                    <img src="../PICTURES/close (1).svg" class="hamburgerButtonClose">    
+                </span>
+            </div>
             <a href="index.html" id="home">Johannes Meyer</a>
             <div id="middle">
                 <a href="aboutMe.html" id="aboutMeA">About Me</a>
@@ -24,7 +34,11 @@
     </div>
 <header>
     <div id="vorschau">
-        <iframe id="headerPic" width="1280px" height="720px" src="https://www.youtube.com/embed/vAVRrbvNQnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe id="headerPic" width="1280px" height="720px" src="https://www.youtube.com/embed/vAVRrbvNQnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        <video id="headerVideo" controls poster="../PICTURES/gemischte Gefühle.00_00_51_06.Still006.jpg">
+           <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>   
     </div>
 </header>
 <div id="contentGrid">
@@ -37,7 +51,7 @@
             <a href="detailP2.html" id="photos">Photo</a>
             <img id="chev2" src="../PICTURES/chevron--right.svg">
         </div>
-        <p id="fach">Mit Zimt und Zuversicht</p>
+        <p id="fach">Gemischte Gefühle</p>
     </div>
     <div id="detailContent">
         <p id="concept" class="headersDetail">Konzeption</p>

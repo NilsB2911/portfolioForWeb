@@ -135,6 +135,14 @@ header {
     width: 30px;
 }
 
+#headerVideo{
+    width: 50vw;
+    height: auto;
+    display: block;
+    justify-self: center;
+    border: none;
+}
+
 ::-webkit-scrollbar {
     width: 10px
 }
@@ -152,4 +160,11 @@ footer{
     justify-content: center;
     margin: 15vh 0vh;
     text-align: center;
+}
+
+@media only screen and (max-width: 1020px){
+    #headerVideo{
+        width: 98vw;
+        height: auto; 
+    }
 }
