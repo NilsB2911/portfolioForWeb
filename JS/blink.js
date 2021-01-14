@@ -43,15 +43,16 @@ function init() {
             elem.addEventListener("mouseout", () => {
                 console.log("stop");
                 clearInterval(interval);
+                document.getElementById(span).style.color = "white";
             })
         })
 
     function changeBlink() {
         if (o) {
-            document.getElementById(span).style.opacity = 1;
+            document.getElementById(span).style.color = "black";
             o = false;
         } else {
-            document.getElementById(span).style.opacity = 0;
+            document.getElementById(span).style.color = "white";
             o = true;
         }
 
