@@ -141,7 +141,7 @@ a {
         position: fixed;
         top: 0;
         display: block;
-        width: -4vw;
+        width: 0vw;
         height: 100vh;
         align-items: start;
         background-color:white;
