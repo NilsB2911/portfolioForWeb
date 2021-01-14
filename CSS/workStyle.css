@@ -14,7 +14,7 @@
 #fibonacci {
     display: grid;
 
-    grid-template-rows: 28.75vw 17.25vw; /*Bitte um Extrapunkte, wir haben hier Mathe gemacht*/
+    grid-template-rows: 25vw 15vw; /*Bitte um Extrapunkte, wir haben hier Mathe gemacht*/
     grid-template-columns: 56vw 16vw 24vw;
     grid-row-gap: 1vw;
     grid-column-gap: 1vw;
@@ -151,29 +151,42 @@ footer {
     grid-column: 2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
     #fibonacci {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
     }
 
+    body{
+        justify-content: center;
+    }    
+    
+    #marginDiv {
+        justify-self: center;
+    }
+
     #f1 {
         grid-row: 1;
         grid-column: 1;
+       
     }
 
     #f2 {
         grid-row: 2;
         grid-column: 1;
+     
     }
 
     #f3 {
         grid-row: 3;
         grid-column: 1;
+       
     }
 
     #f4 {
         grid-row: 4;
         grid-column: 1;
+      
     }
+
 }

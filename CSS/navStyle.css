@@ -100,7 +100,7 @@ a {
     color: rgb(126, 35, 35);
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 1100px){
 
     .hamburgerButtonOpen {
         width: 6vh;
@@ -149,7 +149,7 @@ a {
         background-color:white;
         padding-top: 10vh;
         padding-left: 0vw;
-        /*border-left: solid rgba(206, 206, 206, 0.384) 1px;*/
+        border-left: 0px;
         right:0;
         transition: 0.5s;
     }

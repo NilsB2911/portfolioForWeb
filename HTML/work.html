@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div>
     <div class="container">
+        <div id=hamburgerClosed>
+            <span onclick="openNav()">  
+                <img src="../PICTURES/menu.svg" class="hamburgerButtonOpen">
+            </span>
+        </div>
         <div id="topbar">
+            <div id=hamburgerOpened>
+                <span onclick="closeNav()">
+                    <img src="../PICTURES/close (1).svg" class="hamburgerButtonClose">    
+                </span>
+            </div>
             <a href="index.html" id="home">Johannes Meyer</a>
             <div id="middle">
                 <a href="aboutMe.html" id="aboutMeA">About Me</a>
@@ -24,7 +33,6 @@
             </div>
         </div>
     </div>
-</div>
 <header>
     <div class="mainLand">
         <div id="buch">
