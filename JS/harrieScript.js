@@ -2,7 +2,7 @@ import * as THREE from '../LIBS/three/three.module.js';
 import {OBJLoader} from "../LIBS/three/OBJLoader.js";
 import {OrbitControls} from "../LIBS/three/OrbitControls.js";
 
-let scene, camera, renderer, container, loader;
+let scene, camera, renderer, container, loader, harrie;
 let w, h;
 let wp = new THREE.Vector3();
 
@@ -41,6 +41,7 @@ function init() {
 
     loader = new OBJLoader();
     loader.load("../LIBS/models/harrie.obj", function (obj) {
+        harrie = obj;
         obj.scale.multiplyScalar(20);
         obj.translateY(-200);
         scene.add(obj);
@@ -58,6 +59,7 @@ function init() {
 
         // required if controls.enableDamping or controls.autoRotate are set to true
         orb.update();
+
         renderer.render(scene, camera);
     }
 }

@@ -2,7 +2,7 @@ import * as THREE from '../LIBS/three/three.module.js';
 import {FBXLoader} from "../LIBS/three/FBXLoader.js";
 import {OrbitControls} from "../LIBS/three/OrbitControls.js";
 
-let scene, camera, renderer, container, loader;
+let scene, camera, renderer, container, loader, flieger;
 let w, h;
 
 const sceneContainer = document.querySelector(".mainLand");
@@ -34,6 +34,7 @@ function init() {
 
     loader = new FBXLoader();
     loader.load("../LIBS/models/flieger.fbx", function (obj) {
+        flieger = obj;
         obj.scale.multiplyScalar(14);
         scene.add(obj);
         console.log(loader);
@@ -49,7 +50,6 @@ function init() {
 
         // required if controls.enableDamping or controls.autoRotate are set to true
         orb.update();
-
         renderer.render(scene, camera);
     }
 
