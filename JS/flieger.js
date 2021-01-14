@@ -7,6 +7,7 @@ let w, h;
 
 const sceneContainer = document.querySelector(".mainLand");
 function init() {
+
     w = document.getElementById("papierflieger").offsetWidth;
     h = document.getElementById("papierflieger").offsetHeight;
 
@@ -28,7 +29,9 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({antialias:true});
     renderer.setSize(w, h);
+    renderer.domElement.id = "fliegerCanvas";
     sceneContainer.appendChild(renderer.domElement);
+
 
     let orb = new OrbitControls(camera, renderer.domElement);
     orb.update();
@@ -54,6 +57,11 @@ function init() {
         orb.update();
         renderer.render(scene, camera);
     }
-
+    document.getElementById("fliegerCanvas").addEventListener("mouseover", function () {
+        document.getElementById("fliegerCanvas").style.outline = "black solid 2px";
+    });
+    document.getElementById("fliegerCanvas").addEventListener("mouseout", function () {
+        document.getElementById("fliegerCanvas").style.outline = "none";
+    });
 }
 init();

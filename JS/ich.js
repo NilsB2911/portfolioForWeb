@@ -25,6 +25,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({antialias:true});
     renderer.setSize(w, h);
+    renderer.domElement.id = "buchCanvas";
     sceneContainer.appendChild(renderer.domElement);
 
     let orb = new OrbitControls(camera, renderer.domElement);
@@ -46,11 +47,17 @@ function init() {
     animate();
 
     function animate() {
+
         requestAnimationFrame(animate);
         // required if controls.enableDamping or controls.autoRotate are set to true
         orb.update();
         renderer.render(scene, camera);
     }
-
+    document.getElementById("buchCanvas").addEventListener("mouseover", function () {
+        document.getElementById("buchCanvas").style.outline = "black solid 2px";
+    });
+    document.getElementById("buchCanvas").addEventListener("mouseout", function () {
+        document.getElementById("buchCanvas").style.outline = "none";
+    });
 }
 init();
