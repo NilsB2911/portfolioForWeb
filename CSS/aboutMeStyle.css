@@ -15,10 +15,10 @@
 
 #placeContent {
     display: grid;
-    grid-template-rows: 15vh 50vh 15vh 50vh 15vh 50vh;
-    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 15vh 50vh 15vh 50vh;
+    grid-template-columns: repeat(7, 10vw);
     grid-row-gap: 8vh;
-    grid-column-gap: 7vw;
+    grid-column-gap: 1vw;
     justify-content: start;
     align-items: start;
 }
@@ -42,17 +42,17 @@ h3 {
 
 #bio{
     grid-row: 1 /span 1;
-    grid-column: 2 /span 1;
+    grid-column: 5 /span 3;
 }
 
 #skills {
     grid-row: 3 /span 1;
-    grid-column: 1 /span 1;
+    grid-column: 1 /span 3;
 }
 
 #interests {
     grid-row: 3 /span 1;
-    grid-column: 2 /span 1;
+    grid-column: 5 /span 3;
 }
 
 /*Text*/
@@ -66,15 +66,15 @@ h3 {
 
 #bioText {
     grid-row: 2 /span 1;
-    grid-column: 2 /span 1;
+    grid-column: 5 /span 3;
 }
 #compText {
     grid-row: 4 /span 1;
-    grid-column: 1 /span 1;
+    grid-column: 2 /span 2;
 }
 #interestText {
     grid-row: 4 /span 1;
-    grid-column: 2 /span 1;
+    grid-column: 6 /span 2;
 }
 
 /*Bilder*/
@@ -88,22 +88,103 @@ h3 {
 
 #b1 {
     grid-row: 2 /span 1;
-    grid-column: 1 /span 1;
+    grid-column: 1 /span 3;
    
 }
-#b2 {
-    display: none;
+
+#iconsSkills{
     grid-row: 4 /span 1;
+    grid-column: 1 /span 1 ;
+}
+
+#skillsGrid{
+    display: grid;
+    width: 10vw;
+    height: 24vh;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    align-content: space-around ;
+}
+
+#animation{
+    width: 2vw;
+    grid-row: 1 /span 1;
+    grid-column: 1 /span 1;
+}
+
+
+#code{
+    width: 2vw;
+    grid-row: 1 /span 1;
     grid-column: 2 /span 1;
 }
 
-#b3 {
-    display: none;
-    grid-row: 6 /span 1;
+
+#photo{
+    width: 2vw;
+    grid-row: 2 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#video{
+    width: 2vw;
+    grid-row: 2 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#paint{
+    width: 2vw;
+    grid-row: 3 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#sound{
+    width: 2vw;
+    grid-row: 3 /span 1;
+    grid-column: 2 /span 1;
+}
+
+#iconsInterests{
+    grid-row: 4 /span 1;
+    grid-column: 5 /span 1 ;
+}
+
+#interestsGrid{
+    display: grid;
+    width: 10vw;
+    height: 16vh;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    align-content: space-around ;
+}
+
+#bike{
+    width: 2vw;
+    grid-row: 1 /span 1;
     grid-column: 1 /span 1;
 }
 
 
+#painting{
+    width: 2vw;
+    grid-row: 1 /span 1;
+    grid-column: 2 /span 1;
+}
+
+
+#gaming{
+    width: 2vw;
+    grid-row: 2 /span 1;
+    grid-column: 1 /span 1;
+}
+
+#camping{
+    width: 2vw;
+    grid-row: 2 /span 1;
+    grid-column: 2 /span 1;
+}
 
   /*---footer---*/
 
