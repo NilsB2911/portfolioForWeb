@@ -35,6 +35,7 @@ function init() {
     loader.load("../LIBS/models/buch.fbx", function (obj) {
         buch = obj;
         obj.scale.multiplyScalar(14);
+        obj.position.y = -20;
         scene.add(obj);
         console.log(loader);
         console.log(renderer);
