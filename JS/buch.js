@@ -25,6 +25,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({antialias:true});
     renderer.setSize(w, h);
+    renderer.domElement.id = "bleistiftCanvas";
     sceneContainer.appendChild(renderer.domElement);
 
     let orb = new OrbitControls(camera, renderer.domElement);
@@ -53,6 +54,11 @@ function init() {
         orb.update();
         renderer.render(scene, camera);
     }
-
+    document.getElementById("bleistiftCanvas").addEventListener("mouseover", function () {
+        document.getElementById("bleistiftCanvas").style.outline = "black solid 2px";
+    });
+    document.getElementById("bleistiftCanvas").addEventListener("mouseout", function () {
+        document.getElementById("bleistiftCanvas").style.outline = "none";
+    });
 }
 init();
