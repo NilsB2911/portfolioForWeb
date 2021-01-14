@@ -16,9 +16,8 @@ function init() {
     scene.background = new THREE.Color('white');
 
     camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-    //let dirlight = new THREE.DirectionalLight("white", 5);
-    let hlight = new THREE.AmbientLight('white', 100);
-    scene.add(hlight);
+    let directionalLight = new THREE.DirectionalLight("white", 1);
+    scene.add(directionalLight);
     camera.rotation.y = 45/180*Math.PI;
     camera.position.x = 180;
     camera.position.y = 0;

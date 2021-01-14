@@ -16,12 +16,11 @@ function init() {
     scene.background = new THREE.Color('white');
 
     camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-    //let dirlight = new THREE.DirectionalLight("white", 5);
-    let hlight = new THREE.AmbientLight('white', 1000);
-    scene.add(hlight);
-    camera.position.x = 180;
+    let directionalLight = new THREE.DirectionalLight("white", 1);
+    scene.add(directionalLight);
+    camera.position.x = 0;
     camera.position.y = 0;
-    camera.position.z = 290;
+    camera.position.z = 50;
 
 
     renderer = new THREE.WebGLRenderer({antialias:true});
@@ -33,7 +32,7 @@ function init() {
 
 
     loader = new FBXLoader();
-    loader.load("../LIBS/models/flieger.fbx", function (obj) {
+    loader.load("../LIBS/models/bleistift.fbx", function (obj) {
         obj.scale.multiplyScalar(14);
         scene.add(obj);
         console.log(loader);
