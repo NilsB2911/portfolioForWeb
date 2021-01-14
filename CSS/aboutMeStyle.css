@@ -15,10 +15,10 @@
 
 #placeContent {
     display: grid;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: 15vh 50vh 15vh 50vh 15vh 50vh;
     grid-template-columns: 30vw 30vw;
     grid-row-gap: 8vh;
-    grid-column-gap: 10.5vw;
+    grid-column-gap: 7vw;
     justify-content: start;
     align-items: start;
 }
@@ -44,12 +44,14 @@ h3 {
     grid-row: 1 /span 1;
     grid-column: 2 /span 1;
 }
+
 #skills {
     grid-row: 3 /span 1;
     grid-column: 1 /span 1;
 }
+
 #interests {
-    grid-row: 5 /span 1;
+    grid-row: 3 /span 1;
     grid-column: 2 /span 1;
 }
 
@@ -71,16 +73,17 @@ h3 {
     grid-column: 1 /span 1;
 }
 #interestText {
-    grid-row: 6 /span 1;
+    grid-row: 4 /span 1;
     grid-column: 2 /span 1;
 }
 
 /*Bilder*/
 
 #b1, #b2, #b3 {
-    width: 100%;
-    height: auto;
+    width: 25vw;
+    height: 50vh;
     justify-content: center;
+    object-fit: cover;
 }
 
 #b1 {
@@ -89,11 +92,13 @@ h3 {
    
 }
 #b2 {
+    display: none;
     grid-row: 4 /span 1;
     grid-column: 2 /span 1;
 }
 
 #b3 {
+    display: none;
     grid-row: 6 /span 1;
     grid-column: 1 /span 1;
 }
