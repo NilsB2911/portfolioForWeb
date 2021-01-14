@@ -2,7 +2,7 @@ import * as THREE from '../LIBS/three/three.module.js';
 import {FBXLoader} from "../LIBS/three/FBXLoader.js";
 import {OrbitControls} from "../LIBS/three/OrbitControls.js";
 
-let scene, camera, renderer, container, loader, buch;
+let scene, camera, renderer, container, loader, bleistift;
 let w, h;
 
 const sceneContainer = document.querySelector(".mainLand");
@@ -18,9 +18,9 @@ function init() {
     camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
     let directionalLight = new THREE.DirectionalLight("white", 1);
     scene.add(directionalLight);
-    camera.position.x = 10;
+    camera.position.x = 300;
     camera.position.y = 0;
-    camera.position.z = 50;
+    camera.position.z = 300;
 
 
     renderer = new THREE.WebGLRenderer({antialias:true});
@@ -31,9 +31,11 @@ function init() {
     orb.update();
 
     loader = new FBXLoader();
-    loader.load("../LIBS/models/buch.fbx", function (obj) {
-        buch = obj;
-        obj.scale.multiplyScalar(14);
+    loader.load("../LIBS/models/bleistift.fbx", function (obj) {
+        bleistift = obj;
+        obj.position.y = -120;
+        obj.rotation.y = 45;
+        obj.scale.multiplyScalar(45);
         scene.add(obj);
         console.log(loader);
         console.log(renderer);
