@@ -32,9 +32,18 @@
     color: black; 
     letter-spacing: 0.3em;
     text-transform: none;
-    padding: 0 0.5vw;
+    margin: 0 0.5vw;
     transition: 0.2s ease;
 }
+
+#aboutMeA:hover, #workA:hover, #connectA:hover{
+    animation: lines 1s linear;
+}
+
+@keyframes lines{
+    from {border-bottom: none}
+    to {border-bottom: solid black 1px}
+  }
 
 #home{ /*Unser Homebutton (also das "Johannes Meyer")*/
     grid-row: 1 /span 1;
@@ -87,17 +96,6 @@ a {
 }
 #hamburgerOpened{
     display: none;
-}
-
-#connectA:hover {
-    text-decoration: underline;
-}   
-#workA:hover {
-    text-decoration: underline;
-}
- 
-#aboutMeA:hover {
-    color: rgb(126, 35, 35);
 }
 
 @media only screen and (max-width: 1100px){
