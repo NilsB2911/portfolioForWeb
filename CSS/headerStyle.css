@@ -45,7 +45,8 @@ h1 {
     grid-row: 3 /span 1;
     grid-column: 1 /span 1;
     background-color: white;
-    border: black solid 2px;
+    border: none;
+    outline: none;
 }
 
 ::-webkit-scrollbar {
