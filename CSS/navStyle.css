@@ -34,10 +34,24 @@
     text-transform: none;
     margin: 0 0.5vw;
     transition: 0.2s ease;
+    position: relative;
 }
 
-#aboutMeA:hover, #workA:hover, #connectA:hover{
-    animation: lines 1s linear;
+#aboutMeA::after, #workA::after, #connectA::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#aboutMeA:hover::after, #workA:hover::after, #connectA:hover::after{
+    left: 0%;
+    width: 100%;
 }
 
 @keyframes lines{
@@ -73,6 +87,21 @@
 .fa-instagram{
     grid-row: 1 /span 1;
     color: black;
+    padding: 1vh;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.fa-instagram:before{
+    content:'';
+    border: solid black 1px;
+    height: 0;
+    width: 0;
+
+}
+
+.fa-instagram:before:hover{
+    
 }
 
 
