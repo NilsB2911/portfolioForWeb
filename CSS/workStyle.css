@@ -152,19 +152,35 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
-    #fibonacci {
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: 1fr;
-    }
+
 
     body{
         justify-content: center;
-    }    
-    
-    #marginDiv {
-        justify-self: center;
+        align-items: center;
     }
 
+    #marginDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 84vw;
+        margin-left: 8vw;
+        }
+    }
+
+    #fibonacci {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 8vw;
+    }
+
+    .overlay{
+        opacity: 1;
+    }
+    
     #f1 {
         grid-row: 1;
         grid-column: 1;
