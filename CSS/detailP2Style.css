@@ -10,6 +10,7 @@ header {
 }
 
 #threejsview {
+    position: relative;
     display: grid;
     grid-template-columns: 98vw;
     grid-template-rows: 720px;
@@ -18,15 +19,16 @@ header {
 }
 
 #scene, canvas {
+    position: absolute;
     grid-column: 1;
     grid-row: 1;
     
-    width: 100%;
+    width: 50%;
     height: 100%;
 
     z-index: 1;
 
-    justify-content: center;
+    justify-self: center;
 }
 
 #contentGrid {
@@ -51,7 +53,6 @@ header {
     display: grid;
     width: 90vw;
     justify-self: center;
-
     grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-rows: 1fr;
     grid-gap: 1vw;
@@ -60,13 +61,18 @@ header {
 #last {
     grid-row: 1;
     grid-column: 1;
-    justify-self: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 #next {
     grid-row: 1;
     grid-column: 3;
-    justify-self: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .detailbtn {
@@ -85,6 +91,62 @@ header {
     justify-self: center;
     border: solid black 2px;
     padding: 1vh;
+}
+
+#cubes {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#cubes::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#cubes:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+#photos {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#photos::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#photos:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+#chev1 {
+    vertical-align: center;
+    float: left;
+    width: 30px;
+}
+
+#chev2 {
+    vertical-align: center;
+    float: right;
+    width: 30px;
 }
 
 #concept {

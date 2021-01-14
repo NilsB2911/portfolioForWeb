@@ -173,7 +173,7 @@ header {
 
 #headerVideo{
     width: 50vw;
-    height: auto;
+    height: 720px;
     display: block;
     justify-self: center;
     border: none;
