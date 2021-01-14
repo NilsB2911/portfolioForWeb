@@ -71,6 +71,8 @@ h1 {
     margin: 5vh;
     padding: 2vh;
     outline: none;
+    background-color: white;
+    border: solid 1px rgb(100, 100, 100);
 }
 
 canvas {

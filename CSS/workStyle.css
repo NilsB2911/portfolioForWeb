@@ -166,7 +166,6 @@ footer {
         width: 84vw;
         margin-left: 8vw;
         }
-    }
 
     #fibonacci {
         display: grid;
@@ -180,7 +179,7 @@ footer {
     .overlay{
         opacity: 1;
     }
-    
+
     #f1 {
         grid-row: 1;
         grid-column: 1;
@@ -204,5 +203,4 @@ footer {
         grid-column: 1;
       
     }
-
 }

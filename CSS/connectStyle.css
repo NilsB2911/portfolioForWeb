@@ -79,7 +79,7 @@
 
     grid-row: 1;
     grid-column: 2;
-    align-items: center;
+    align-items: start;
 
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
