@@ -11,7 +11,7 @@ function init() {
     h = document.getElementById("papierflieger").offsetHeight;
 
     container = document.getElementById("papierflieger");
-    document.body.appendChild(container)
+    document.body.appendChild(container);
     scene = new THREE.Scene();
     scene.background = new THREE.Color('white');
 
@@ -35,6 +35,8 @@ function init() {
     loader = new FBXLoader();
     loader.load("../LIBS/models/flieger.fbx", function (obj) {
         flieger = obj;
+        obj.position.y = -15;
+        obj.position.x = 60;
         obj.scale.multiplyScalar(14);
         scene.add(obj);
         console.log(loader);

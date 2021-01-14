@@ -33,7 +33,8 @@ function init() {
     loader = new FBXLoader();
     loader.load("../LIBS/models/bleistift.fbx", function (obj) {
         bleistift = obj;
-        obj.position.y = -120;
+        obj.position.y = -180;
+        obj.position.x = -20
         obj.rotation.y = 45;
         obj.scale.multiplyScalar(45);
         scene.add(obj);
