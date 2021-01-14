@@ -78,3 +78,9 @@ h1 {
 canvas {
     margin-bottom: 4vh;
 }
+
+@media screen and (max-width: 1100px) {
+    #backToTop {
+        display: none;
+    }
+}
