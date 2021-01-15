@@ -121,11 +121,11 @@ a:hover{
     background: black;
 }
 
-.landingFooter{
+#datenschutz{
     position: relative;
 }
 
-.landingFooter::after{
+#datenschutz::after{
     content:'';
     width: 0%;
     height: 1px;
@@ -137,7 +137,28 @@ a:hover{
     transition: 0.3s ease;
 }
 
-.landingFooter:hover::after{
+#datenschutz:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+#impressum{
+    position: relative;
+}
+
+#impressum::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#impressum:hover::after{
     left: 0%;
     width: 100%;
 }

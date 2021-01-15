@@ -22,8 +22,8 @@ header {
     grid-column: 1;
     grid-row: 1;
     
-    width: 100%;
-
+    width: 1280px;
+    justify-self: center;
     z-index: 1;
 }
 
@@ -59,8 +59,7 @@ header {
     grid-column: 1;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-   
+    align-items: center;  
 }
 
 #next {
@@ -87,6 +86,7 @@ header {
     justify-self: center;
     border: solid black 2px;
     padding: 1vh;
+    text-align: center;
 }
 
 #concept {
@@ -97,6 +97,20 @@ header {
 #story {
     grid-row: 3;
     grid-column: 1 /span 2;
+}
+
+#p1Concept {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+#p2Story {
+    grid-row: 4;
+    grid-column: 2;
+    width: 100%;
+    object-fit: cover;
 }
 
 #cubes {
@@ -171,13 +185,6 @@ header {
     width: 30px;
 }
 
-#headerVideo{
-    width: 50vw;
-    height: auto;
-    display: block;
-    justify-self: center;
-    border: none;
-}
 
 ::-webkit-scrollbar {
     width: 10px
@@ -219,9 +226,79 @@ footer{
     width: 100%;
 }
 
-@media only screen and (max-width: 1020px){
-    #headerVideo{
-        width: 98vw;
-        height: auto; 
+@media only screen and (max-width: 1100px){
+
+    #headerPic{
+        width: 80vw;
+        height: 45vw;
+        padding-top: 10vh;
     }
+
+    #contentGrid {
+        display: grid;
+    }
+
+    #smallNavBar {
+        display: grid;
+        width: 90vw;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1vw;
+    }
+    
+    #last {
+        grid-row: 2/ span 1;
+        grid-column: 1/ span 1;
+    }
+
+    #next {
+        grid-row: 2/ span 1;
+        grid-column: 3/ span 1;
+    }
+
+
+    #fach {
+        grid-row: 1/ span 1;
+        grid-column: 1/ span 3;
+    }
+
+    #detailContent {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 75vw;
+        grid-template-rows: repeat(6,auto);
+        grid-row-gap: 5vh;
+    }
+
+    #concept {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #p1Concept {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #conceptText {
+        grid-row: 3;
+        grid-column: 1;
+        }
+
+    #story {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    #p2Story {
+        grid-row: 5;
+        grid-column: 1;
+    }
+   
+    #storyText {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
 }

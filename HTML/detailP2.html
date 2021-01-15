@@ -8,20 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="container">
-    <div id="topbar">
-        <a href="index.html" id="home">Johannes Meyer</a>
-        <div id="middle">
-            <a href="aboutMe.html" id="aboutMeA">About Me</a>
-            <a href="work.html" id="workA">Work</a>
-            <a href="connect.html" id="connectA">Connect</a>
+    <div class="container">
+        <div id=hamburgerClosed>
+            <span onclick="openNav()">  
+                <img src="../PICTURES/menu.svg" class="hamburgerButtonOpen">
+            </span>
         </div>
-        <div id="social">
-            <a href="https://twitter.com" class="fa fa-twitter"></a>
-            <a href="https://instagram.com" class="fa fa-instagram"></a>
+        <div id="topbar">
+            <div id=hamburgerOpened>
+                <span onclick="closeNav()">
+                    <img src="../PICTURES/close (1).svg" class="hamburgerButtonClose">    
+                </span>
+            </div>
+            <a href="index.html" id="home">Johannes Meyer</a>
+            <div id="middle">
+                <a href="aboutMe.html" id="aboutMeA">About Me</a>
+                <a href="work.html" id="workA">Work</a>
+                <a href="connect.html" id="connectA">Connect</a>
+            </div>
+            <div id="social">
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://instagram.com" class="fa fa-instagram"></a>
+            </div>
         </div>
     </div>
-</div>
 <header>
     <div id="threejsview">
         <div id="scene"></div>
@@ -30,10 +40,12 @@
 <div id="contentGrid">
     <div id="smallNavBar">
         <div id="last" class="detailbtn">
-            <p>Cubes</p>
+            <img id="chev1" src="../PICTURES/chevron--left.svg">
+            <a href="detailP2.html" id="cubes">Gemischte Gefühle</a>
         </div>
         <div id="next" class="detailbtn">
-            <p>Photo</p>
+            <a href="detailP2.html" id="photos">Harrie</a>
+            <img id="chev2" src="../PICTURES/chevron--right.svg">
         </div>
         <p id="fach">Harrie</p>
     </div>
@@ -55,6 +67,7 @@
     </div>
 </div>
 <script type="module" src="../JS/harrieScript.js"></script>
+<script src="../JS/responsiveNav.js"></script>
 </body>
 <footer>
     <a class="impressum" href="datenschutz.html">Datenschutzerklärung</a>

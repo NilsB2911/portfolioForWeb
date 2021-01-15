@@ -1,5 +1,5 @@
 .container {
-    display: static;
+    display: grid;
     width: 98vw;
     height: 9vh;
     align-items: start;
@@ -125,6 +125,7 @@ a {
         padding: 2vw 0vw 2vw 92vw;
         z-index: 1001;
         background-color: white;
+        box-sizing: border-box;
     }
 
     .hamburgerButtonClose {
@@ -143,6 +144,7 @@ a {
         top: 0;
         right: 0;
     }
+    
     #hamburgerOpened{
         display: block;
         position: absolute;

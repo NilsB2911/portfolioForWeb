@@ -6,12 +6,11 @@
     height: 100%;
 }
 #content {
-    display: flex;
+    display: grid;
     width: 98vw;
     align-items: center;
     justify-content: center;
 }
-
 
 #placeContent {
     display: grid;
@@ -214,4 +213,120 @@ footer{
 .impressum:hover::after{
     left: 0%;
     width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+
+    #placeContent{
+        display: grid;
+        grid-template-rows: 40vh 15vh 30vh 15vh 30vh 15vh 30vh;
+        grid-template-columns: repeat(3, 25vw);
+        justify-content: start;
+        align-items: start;
+    }
+
+    #b1 {
+        grid-row: 1 /span 1;
+        grid-column: 1 /span 3; 
+        width: 50vw;
+        height: 40vh;
+        justify-content: center;
+        object-fit: cover;
+    }
+
+    #bio{
+        grid-row: 2 /span 1;
+        grid-column: 1 /span 3;
+    }
+
+    #bioText {
+        grid-row: 3 /span 1;
+        grid-column: 1 /span 3;
+    }
+    
+    #skills {
+        grid-row: 4 /span 1;
+        grid-column: 1 /span 3;
+    }
+
+    #iconsSkills{
+        grid-row: 5 /span 1;
+        grid-column: 1 /span 1 ;
+    }
+
+    #compText {
+        grid-row: 5 /span 1;
+        grid-column: 2 /span 2;
+    }
+
+    #interests {
+        grid-row: 6 /span 1;
+        grid-column: 1 /span 3;
+    }
+
+    #iconsInterests{
+        grid-row: 7 /span 1;
+        grid-column: 1 /span 1 ;
+    }
+
+    #interestText {
+        grid-row: 7 /span 1;
+        grid-column: 2 /span 2;
+    }    
+
+   
+
+    #skillsGrid{
+        width: 20vw;
+        height: 24vh;
+    }
+    
+    #animation{
+        width: 4vw;
+    }
+    
+    
+    #code{
+        width: 4vw;
+    }
+    
+    
+    #photo{
+        width: 4vw;
+    }
+    
+    #video{
+        width: 4vw;
+    }
+    
+    #paint{
+        width: 4vw;
+    }
+    
+    #sound{
+        width: 4vw;
+    }
+
+    #interestsGrid{
+        width: 20vw;
+        height: 16vh;
+    }
+
+    #bike{
+        width: 4vw;
+    }
+    
+    
+    #painting{
+        width: 4vw;
+    }
+    
+    
+    #gaming{
+        width: 4vw;
+    }
+    
+    #camping{
+        width: 4vw;
+    }
 }
