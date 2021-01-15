@@ -7,7 +7,7 @@ let w, h;
 let wp = new THREE.Vector3();
 
 /**
- * teils entnommen der Dokumentation von three js
+ * teils entnommen von https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene, https://www.youtube.com/watch?v=1TeMXIWRrqE&t=4s und https://threejs.org/docs/#examples/en/controls/OrbitControls
  */
 
 document.getElementById("scene").addEventListener("resize", function () {

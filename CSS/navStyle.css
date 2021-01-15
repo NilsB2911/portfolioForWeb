@@ -36,6 +36,9 @@
     position: relative;
 }
 
+/*Das underlining wurde mit Hilfe dieses Tutorials gemacht: https://www.youtube.com/watch?v=Xa40_EOxJBA.
+Diese Methode tritt noch in anderen CSS Dateien auf*/
+
 #aboutMeA::after, #workA::after, #connectA::after{
     content:'';
     width: 0%;
@@ -109,6 +112,8 @@ a {
     display: none;
 }
 
+
+/*erstellt mit Hilfe von https://www.w3schools.com/howto/howto_js_sidenav.asp*/
 @media only screen and (max-width: 1100px){
     
 

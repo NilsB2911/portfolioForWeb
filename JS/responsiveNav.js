@@ -1,5 +1,9 @@
 "use strict"
 
+/*
+    erstellt mit Hilfe von https://www.w3schools.com/howto/howto_js_sidenav.asp
+ */
+
 window.addEventListener("resize", (e) => {
     if(e.target.innerWidth > 1099) {
         closeNav();

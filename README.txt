@@ -49,5 +49,8 @@ Icons:
 Animation:
 Underlining bei Hover: https://www.youtube.com/watch?v=Xa40_EOxJBA
 
+Responsive Navbar:
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+
 Allgemein:
 HTML und CSS Eigenschaften: https://www.w3schools.com
