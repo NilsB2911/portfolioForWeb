@@ -23,14 +23,14 @@ Zeitaufwendige Projekte:
 - Am aufwendigsten war der Entwurf und die Umsetzung des Fibonacci-Grids in Work. Obwohl die Umsetzung im Nachhinein natürlich
 logisch erscheint, haben wir viele Anläufe gebraucht, bis das Grid vernünftig aussah und die Bilder ihre jeweilige Fläche immer
 korrekt ausnutzen
-- Das umsetzen der Responsivität, da wir extrem oft mir Grids gearbeitet haben, welche alle an eine alternative Auflösung
+- Das Umsetzen der Responsivität, da wir extrem oft mir Grids gearbeitet haben, welche alle an eine alternative Auflösung
 (in unserem Fall 1100px) angepasst werden mussten
 - das Einbinden der THREEJS Bibliothek und die anschließende Implementierung der 3D-Objekte (alle selbstgemacht)
 
 
 Noch nicht umgesetzt:
 
-- Richtiges Einfaden der Rahmen um die 3D-Objekte
+- Richtiges Fade-In der Rahmen um die 3D-Objekte
 - kleine Animationen der 3D-Objekte bei benutzergetriggerten Handlungen
 - Page Transitions mit SWUP
 
