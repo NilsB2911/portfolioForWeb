@@ -16,6 +16,7 @@ header {
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
+    margin-top: 1vh;
 }
 
 #headerPic {
