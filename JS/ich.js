@@ -5,6 +5,10 @@ import {OrbitControls} from "../LIBS/three/OrbitControls.js";
 let scene, camera, renderer, container, loader, buch;
 let w, h;
 
+/**
+ * teils entnommen der Dokumentation von three js
+ */
+
 const sceneContainer = document.querySelector(".mainLand");
 function init() {
     w = document.getElementById("ich").offsetWidth;
