@@ -1,3 +1,11 @@
+"use strict"
+
+window.addEventListener("resize", (e) => {
+    if(e.target.innerWidth > 1099) {
+        closeNav();
+    }
+})
+
 function openNav (){
     document.getElementById("topbar").style.width = "25vh";
     document.getElementById("topbar").style.paddingLeft = "2vw";
