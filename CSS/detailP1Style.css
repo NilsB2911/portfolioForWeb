@@ -185,6 +185,16 @@ header {
     width: 30px;
 }
 
+<<<<<<< HEAD
+=======
+#headerVideo{
+    width: 50vw;
+    height: 720px;
+    display: block;
+    justify-self: center;
+    border: none;
+}
+>>>>>>> fb75837f370e79e2b793b6905e951ecc87099403
 
 ::-webkit-scrollbar {
     width: 10px
