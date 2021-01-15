@@ -73,6 +73,7 @@ h1 {
     outline: none;
     background-color: white;
     border: solid 1px rgb(100, 100, 100);
+    opacity: 0;
 }
 
 canvas {

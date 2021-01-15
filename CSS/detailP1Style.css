@@ -22,7 +22,8 @@ header {
     grid-column: 1;
     grid-row: 1;
     
-    width: 1280px;
+    width: calc(1280px*0.9);
+    height: calc(720px*0.9);
     justify-self: center;
     z-index: 1;
 }
@@ -92,11 +93,13 @@ header {
 #concept {
     grid-row: 1;
     grid-column: 1 /span 2;
+    padding-top: 5vh;
 }
 
 #story {
     grid-row: 3;
     grid-column: 1 /span 2;
+    padding-top: 5vh;
 }
 
 #p1Concept {
@@ -249,8 +252,8 @@ footer{
         display: grid;
         width: 90vw;
         justify-self: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 1vw;
     }
     
@@ -264,6 +267,17 @@ footer{
         grid-column: 3/ span 1;
     }
 
+    #cubes{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #photos{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+
 
     #fach {
         grid-row: 1/ span 1;
@@ -276,6 +290,7 @@ footer{
         grid-template-columns: 75vw;
         grid-template-rows: repeat(6,auto);
         grid-row-gap: 5vh;
+        padding-top: 0;
     }
 
     #concept {

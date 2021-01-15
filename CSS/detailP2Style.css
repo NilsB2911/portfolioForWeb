@@ -12,7 +12,7 @@ header {
 #threejsview {
     display: grid;
     grid-template-columns: 98vw;
-    grid-template-rows: 720px;
+    grid-template-rows: calc(720px*0.9);
     justify-content: center;
     align-items: center;
 }
@@ -21,11 +21,11 @@ header {
     grid-column: 1;
     grid-row: 1;
     
-    width: 100%;
+    width: 50vw;
     height: 100%;
 
     z-index: 1;
-
+    justify-self: center;
     justify-content: center;
 }
 
@@ -51,8 +51,7 @@ header {
     display: grid;
     width: 90vw;
     justify-self: center;
-
-    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 1vw;
 }
@@ -60,13 +59,17 @@ header {
 #last {
     grid-row: 1;
     grid-column: 1;
-    justify-self: left;
+    display: flex;
+    justify-self: start;
+    align-items: center;  
 }
 
 #next {
     grid-row: 1;
     grid-column: 3;
-    justify-self: right;
+    display: flex;
+    justify-self: end;
+    align-items: center;
 }
 
 .detailbtn {
@@ -75,6 +78,7 @@ header {
     font-size: 2rem;
     letter-spacing: 0.8rem;
 }
+
 
 #fach {
     grid-row: 1;
@@ -87,14 +91,74 @@ header {
     padding: 1vh;
 }
 
+#chev1 {
+    vertical-align: center;
+    float: left;
+    width: 30px;
+}
+
+#chev2 {
+    vertical-align: center;
+    float: right;
+    width: 30px;
+}
+
+#cubes {
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 3vh ;
+}
+
+#cubes::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#cubes:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
+#photos {
+    font-size: 1.5rem;
+    position: relative;
+    padding-right: 3vh ;
+}
+
+#photos::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#photos:hover::after{
+    left: 0%;
+    width: 100%;
+}
+
 #concept {
     grid-row: 1;
     grid-column: 1 /span 2;
+    padding-top: 5vh;
 }
 
 #story {
     grid-row: 3;
     grid-column: 1 /span 2;
+    padding-top: 5vh;
 }
 
 #p1Model {
@@ -168,4 +232,92 @@ footer{
 
 canvas {
     padding-right: 0.5vw;
+}
+
+@media only screen and (max-width: 1100px){
+
+    #scene, canvas{
+        width: 50vw;
+        height: 30vw;
+        padding-top: 10vh;
+    }
+
+    #contentGrid {
+        display: grid;
+    }
+
+    #cubes{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #photos{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #smallNavBar {
+        display: grid;
+        width: 90vw;
+        justify-self: center;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1vw;
+    }
+    
+    #last {
+        grid-row: 2/ span 1;
+        grid-column: 1/ span 1;
+    }
+
+    #next {
+        grid-row: 2/ span 1;
+        grid-column: 3/ span 1;
+    }
+
+
+    #fach {
+        grid-row: 1/ span 1;
+        grid-column: 1/ span 3;
+    }
+
+    #detailContent {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 75vw;
+        grid-template-rows: repeat(6,auto);
+        grid-row-gap: 5vh;
+        padding-top: 0;
+    }
+
+    #concept {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #p1Model {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #conceptText {
+        grid-row: 3;
+        grid-column: 1;
+        }
+
+    #story {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    #p2Material {
+        grid-row: 5;
+        grid-column: 1;
+    }
+   
+    #storyText {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
 }

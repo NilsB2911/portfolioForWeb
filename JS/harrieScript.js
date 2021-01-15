@@ -42,8 +42,8 @@ function init() {
     loader = new OBJLoader();
     loader.load("../LIBS/models/harrie.obj", function (obj) {
         harrie = obj;
-        obj.scale.multiplyScalar(20);
-        obj.translateY(-200);
+        obj.scale.multiplyScalar(15);
+        obj.translateY(-150);
         scene.add(obj);
         obj.getWorldPosition(wp);
         renderer.render(scene, camera);
